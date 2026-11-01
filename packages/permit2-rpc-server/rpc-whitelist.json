@@ -3,7 +3,6 @@
     "1": [
       "https://eth-mainnet.nodereal.io/v1/1659dfb40aa24bbb8153a677b98064d7",
       "https://ethereum-rpc.publicnode.com",
-      "https://1rpc.io/eth",
       "https://rpc.mevblocker.io",
       "https://rpc.flashbots.net",
       "https://virginia.rpc.blxrbdn.com",
@@ -81,6 +80,7 @@
       "https://bsc.blockrazor.xyz",
       "https://bsc.api.pocket.network",
       "https://public-bsc-mainnet.fastnode.io",
+      "https://api-bsc-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
       "https://rpc.backrunshield.com",
       "https://bsc-rpc.blockreq.com/v1/rpc/public",
       "https://api.blockvectra.com/v1/bsc_mainnet/public"
@@ -92,7 +92,6 @@
       "https://gnosis.api.onfinality.io/public",
       "https://gnosis.drpc.org",
       "https://gnosis-rpc.publicnode.com",
-      "https://1rpc.io/gnosis",
       "https://gno-mainnet.gateway.tatum.io",
       "https://gnosis.api.pocket.network",
       "https://gnosis.oat.farm",
@@ -102,6 +101,7 @@
       "https://rpc-mainnet.matic.quiknode.pro",
       "https://1rpc.io/matic",
       "https://polygon-bor-rpc.publicnode.com",
+      "https://polygon.api.onfinality.io/public",
       "https://polygon.drpc.org",
       "https://polygon.gateway.tenderly.co",
       "https://gateway.tenderly.co/public/polygon",
@@ -115,7 +115,6 @@
     "8453": [
       "https://mainnet.base.org",
       "https://base.public.blockpi.network/v1/rpc/public",
-      "https://1rpc.io/base",
       "https://base-public.nodies.app",
       "https://base.meowrpc.com",
       "https://base-mainnet.public.blastapi.io",
@@ -123,6 +122,7 @@
       "https://gateway.tenderly.co/public/base",
       "https://base-rpc.publicnode.com",
       "https://base.drpc.org",
+      "https://base.api.onfinality.io/public",
       "https://base-mainnet.gateway.tatum.io",
       "https://api.zan.top/base-mainnet",
       "https://base.api.pocket.network",
@@ -135,7 +135,6 @@
     ],
     "42161": [
       "https://arb1.arbitrum.io/rpc",
-      "https://1rpc.io/arb",
       "https://arbitrum-one-public.nodies.app",
       "https://arbitrum-one.public.blastapi.io",
       "https://arbitrum-one-rpc.publicnode.com",
@@ -155,13 +154,11 @@
       "https://rpc.ankr.com/celo",
       "https://celo-mainnet.gateway.tatum.io",
       "https://celo-json-rpc.stakely.io",
-      "https://celo.api.onfinality.io/public",
-      "https://api-celo-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c"
+      "https://celo.api.onfinality.io/public"
     ],
     "43114": [
       "https://api.avax.network/ext/bc/C/rpc",
       "https://avalanche-c-chain-rpc.publicnode.com",
-      "https://1rpc.io/avax/c",
       "https://avalanche.api.onfinality.io/public/ext/bc/C/rpc",
       "https://api.zan.top/avax-mainnet/ext/bc/C/rpc",
       "https://avalanche.drpc.org",
@@ -172,8 +169,6 @@
     ],
     "81457": [
       "https://rpc.blast.io",
-      "https://blast-rpc.publicnode.com",
-      "https://blast.drpc.org",
       "https://blast.api.pocket.network",
       "https://api-blast-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c"
     ],
@@ -192,13 +187,14 @@
       "wss://optimism-rpc.publicnode.com",
       "wss://optimism.gateway.tenderly.co",
       "wss://optimism.drpc.org",
-      "wss://opt-mainnet.g.alchemy.com/v2/demo",
+      "wss://optimism.api.onfinality.io/public",
       "wss://gateway.tenderly.co/public/optimism",
       "wss://api-optimism-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
       "wss://optimism-rpc.blockreq.com/v1/rpc/public"
     ],
     "56": [
       "wss://bsc-rpc.publicnode.com",
+      "wss://bsc.drpc.org",
       "wss://bsc.api.pocket.network",
       "wss://api-bsc-mainnet-full.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
       "wss://bsc-rpc.blockreq.com/v1/rpc/public"
@@ -226,7 +222,6 @@
       "wss://gateway.tenderly.co/public/base",
       "wss://base.drpc.org",
       "wss://base.api.pocket.network",
-      "wss://api-base-mainnet-archive.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c",
       "wss://base-rpc.blockreq.com/v1/rpc/public"
     ],
     "42161": [
@@ -246,14 +241,11 @@
       "wss://avalanche-rpc.blockreq.com/v1/rpc/public"
     ],
     "81457": [
-      "wss://blast-rpc.publicnode.com",
-      "wss://blast.drpc.org",
       "wss://rpc.blast.io",
       "wss://blast.api.pocket.network"
     ],
     "7777777": [
-      "wss://zora.drpc.org",
-      "wss://api-zora-mainnet.n.dwellir.com/2ccf18bf-2916-4198-8856-42172854353c"
+      "wss://zora.drpc.org"
     ]
   }
 }

@@ -1,5 +1,6 @@
 import { expect, test } from "bun:test";
 import { startBunServer } from "../packages/permit2-rpc-server/src/bun-server.ts";
+import { parseBooleanEnvValue } from "../packages/permit2-rpc-server/src/runtime.ts";
 
 test("Bun listener serves assets, health, CORS and MCP without a Deno runtime", async () => {
   const server = startBunServer({ port: 0 });
@@ -74,5 +75,18 @@ test("Bun WebSocket adapter queues requests and relays binary frames", async () 
     await upstream.stop(true);
     if (previous === undefined) delete Bun.env.RPC_WSS_URL_1;
     else Bun.env.RPC_WSS_URL_1 = previous;
+  }
+});
+
+
+test("parseBooleanEnvValue parses supported aliases, case and whitespace consistently", () => {
+  for (const value of ["1", "true", "yes", "y", "on", " TRUE ", "\tYes\n", "Y", "ON"]) {
+    expect(parseBooleanEnvValue(value)).toBe(true);
+  }
+  for (const value of ["0", "false", "no", "n", "off", " FALSE ", "\tNo\n", "N", "  n  "]) {
+    expect(parseBooleanEnvValue(value)).toBe(false);
+  }
+  for (const value of [undefined, "", "maybe", "2"]) {
+    expect(parseBooleanEnvValue(value)).toBeUndefined();
   }
 });
